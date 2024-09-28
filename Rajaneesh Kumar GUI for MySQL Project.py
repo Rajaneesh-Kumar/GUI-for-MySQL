@@ -814,7 +814,7 @@ def connection():
 
 def execute():
     dat=""
-    obj=sql.connect(host="localhost",user="root",passwd="HP 245G5",database=e3.get())
+    obj=sql.connect(host="localhost",user="root",passwd=e2.get(),database=e3.get())
     cursor=obj.cursor()
     values=(eval(val.get()))
     cursor.execute(cmd.get()%(eval(val.get())))
@@ -834,7 +834,7 @@ def execute():
 
 def commitexe():
     dat=""
-    obj=sql.connect(host="localhost",user="root",passwd="HP 245G5",database=e3.get())
+    obj=sql.connect(host="localhost",user="root",passwd=e2.get(),database=e3.get())
     cursor=obj.cursor()
     values=(eval(val.get()))
     cursor.execute(cmd.get()%(eval(val.get())))
